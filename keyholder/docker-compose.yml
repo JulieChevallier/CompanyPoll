@@ -1,0 +1,42 @@
+version: "3.8"
+
+services:
+  keyholder-1:
+    container_name: keyholder1
+    image: docker-keyholder-image
+    environment:
+      - PORT=5071
+      
+    build:
+      context: .
+    ports:
+      - 5070:5071
+    networks:
+      - companypoll-network
+  keyholder-2:
+    container_name: keyholder2
+    image: docker-keyholder-image
+    environment:
+      - PORT=5071
+    build:
+      context: .
+    ports:
+      - 5071:5071
+    networks:
+      - companypoll-network
+  keyholder-3:
+    container_name: keyholder3
+    image: docker-keyholder-image
+    environment:
+      - PORT=5071
+    build:
+      context: .
+    ports:
+      - 5072:5071
+    networks:
+        - companypoll-network
+
+
+networks:
+  companypoll-network:
+    external: true
