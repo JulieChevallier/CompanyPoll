@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: server
+    image: companypoll-server
+    environment:
+      - SCRUT_PORT=5057
+      - SCRUT_IP=scrutateur
+    build:
+      context: .
+    ports :
+      - 5056:5056
+    networks:
+      - companypoll-network
+    expose:
+      - 5056
+
+
+networks:
+  companypoll-network:
+    external: true

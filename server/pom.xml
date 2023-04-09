@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.clochelabs</groupId>
+  <artifactId>urne</artifactId>
+  <packaging>jar</packaging>
+  <version>1</version>
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+  <name>server</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13.2</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mariadb.jdbc</groupId>
+      <artifactId>mariadb-java-client</artifactId>
+      <version>2.1.2</version>
+    </dependency>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter</artifactId>
+          <version>RELEASE</version>
+          <scope>test</scope>
+      </dependency>
+    <!-- https://mvnrepository.com/artifact/org.mockito/mockito-core -->
+
+
+  </dependencies>
+
+  <build>
+  <plugins>
+    <plugin>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <configuration>
+        <archive>
+          <manifest>
+            <mainClass>com.clochelabs.Server</mainClass>
+          </manifest>
+        </archive>
+        <descriptorRefs>
+          <descriptorRef>jar-with-dependencies</descriptorRef>
+        </descriptorRefs>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+<repositories>
+  <repository>
+    <id>gitlab-maven</id>
+    <url>${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven</url>
+  </repository>
+</repositories>
+<distributionManagement>
+  <repository>
+    <id>gitlab-maven</id>
+    <url>${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven</url>
+  </repository>
+  <snapshotRepository>
+    <id>gitlab-maven</id>
+    <url>${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/maven</url>
+  </snapshotRepository>
+</distributionManagement>
+</project>
