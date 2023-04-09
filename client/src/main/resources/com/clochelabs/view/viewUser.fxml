@@ -1,0 +1,3 @@
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="root" nodeOrientation="LEFT_TO_RIGHT" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clochelabs.view.UserController">
+</BorderPane>

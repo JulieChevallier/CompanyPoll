@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root type="javafx.scene.layout.AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="130.0" layoutY="63.0" style="-fx-font-size: 60;" text="Bienvenue" />
+      <Label fx:id="usernameLabel" layoutX="217.0" layoutY="147.0" style="-fx-font-size: 30;" text="Utilisateur" />
+      <Label layoutX="94.0" layoutY="248.0" style="-fx-text-fill: #9a9898;" text="veuillez choisir un sondage sur lequel voter" />
+   </children>
+</fx:root>

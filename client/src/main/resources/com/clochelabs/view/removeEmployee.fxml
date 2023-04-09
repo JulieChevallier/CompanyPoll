@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root stylesheets="@login.css" type="javafx.scene.layout.BorderPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label prefHeight="55.0" prefWidth="577.0" style="-fx-font-size: 30;" text="Supprimer un utilisateur" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets left="30.0" top="20.0" />
+         </padding></Label>
+   </top>
+   <center>
+      <VBox fx:id="employees" prefHeight="333.0" prefWidth="558.0" BorderPane.alignment="CENTER" />
+   </center>
+</fx:root>

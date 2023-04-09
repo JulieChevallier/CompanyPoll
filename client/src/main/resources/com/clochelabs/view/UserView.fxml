@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<!-- Path: client\src\main\resources\com\clochelabs\view\LoginView.fxml -->
+<?import javafx.geometry.Insets?>
+<fx:root stylesheets="@css/style.css" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="userLabel" />
+      <Pane>
+         <children>
+            <ImageView fx:id="removeButton">
+               <Image url="@close.png" />
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</fx:root>

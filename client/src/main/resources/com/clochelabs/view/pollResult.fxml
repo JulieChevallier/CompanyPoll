@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="420.0" stylesheets="@login.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="420.0">
+         <top>
+      
+            <VBox prefHeight="47.0" prefWidth="334.0" BorderPane.alignment="CENTER">
+                <Label fx:id="title" prefHeight="5.0" prefWidth="350.0" text="Election du chef du monde" />
+                <Label style="-fx-text-fill: grey; -fx-font-size: 12px;" text="Terminé" textFill="#b2b2b2">
+                  <font>
+                     <Font size="9.0" />
+                  </font>
+               </Label>
+            </VBox>
+         </top>
+         <center>
+            <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="resultatLabel" text="Résultat : Milou" />
+                  <ProgressBar fx:id="progress" prefHeight="21.0" prefWidth="394.0" progress="0.6" style="-fx-accent: #6C63FF; -fx-border-color: transparent;" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</fx:root>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root nodeOrientation="LEFT_TO_RIGHT" prefHeight="489.0" styleClass="sideBar" stylesheets="@css/style.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+
+          <HBox alignment="CENTER_LEFT">
+        <ImageView>
+            <Image url="@images/profile_picture.png" />
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+
+              </ImageView>
+        <Label fx:id="usernameContainer" text="username">
+         <effect>
+            <Glow level="1.0" />
+         </effect></Label>
+      <VBox.margin>
+         <Insets bottom="30.0" />
+      </VBox.margin>
+
+          </HBox>
+
+          <VBox fx:id="polls" VBox.vgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT">
+
+                  <Label text="POLLS">
+            <padding>
+               <Insets bottom="10.0" />
+            </padding></Label>
+        </HBox>
+
+          </VBox>
+
+          <VBox styleClass="parameters">
+        <HBox fx:id="settings" alignment="CENTER_LEFT">
+            <ImageView fitHeight="17" fitWidth="17">
+                <Image url="@images/parameter.png" />
+                <HBox.margin>
+                    <Insets right="10.0" />
+                </HBox.margin>
+            </ImageView>
+            <Label text="Settings">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Label>
+        </HBox>
+
+        <HBox fx:id="signout" alignment="CENTER_LEFT">
+            <ImageView fitHeight="17" fitWidth="17">
+                <Image url="@images/sign_out.png" />
+                <HBox.margin>
+                    <Insets right="10.0" />
+                </HBox.margin>
+            </ImageView>
+            <Label text="Sign out">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor></Label>
+        </HBox>
+      <padding>
+         <Insets bottom="5.0" />
+      </padding>
+    </VBox>
+
+   <padding>
+      <Insets left="20.0" top="15.0" />
+   </padding>
+
+</fx:root>

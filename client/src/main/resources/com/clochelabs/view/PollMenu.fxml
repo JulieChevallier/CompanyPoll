@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root stylesheets="@login.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0">
+         <children>
+            <Label fx:id="titleLabel" style="-fx-font-size: 35;" text="Title">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="dateLabel" style="-fx-text-fill: #9a9898; -fx-font-size: 12;" text="Du jj/mm/yyyy au jj/mm/yyyy" />
+         </children>
+      </VBox>
+      <Line fx:id="separator" endX="-99.99996948242188" endY="279.6666564941406" layoutX="400.0" layoutY="125.0" startX="-100.0" startY="-4.0" stroke="#9a9898" />
+      <Label fx:id="choiceLabel1" layoutX="14.0" layoutY="129.0" maxWidth="-Infinity" text="Choice 1" />
+      <Label fx:id="choiceLabel2" layoutX="310.0" layoutY="129.0" maxWidth="-Infinity" text="Choice2" />
+      <Button fx:id="choiceButton1" layoutX="62.0" layoutY="224.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="179.0" style="-fx-background-color: #FFFF; -fx-background-insets: 0; -fx-background-radius: 30; -fx-font-size: 20;" text="Choisir" />
+      <Button fx:id="choiceButton2" layoutX="358.0" layoutY="224.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="179.0" style="-fx-background-color: #FFFF; -fx-background-insets: 0; -fx-background-radius: 30; -fx-font-size: 20;" text="Choisir" />
+      <Label fx:id="stateLabel" layoutX="269.0" layoutY="31.0" />
+   </children>
+</fx:root>

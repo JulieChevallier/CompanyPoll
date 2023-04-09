@@ -1,0 +1,23 @@
+
+.root{
+    -fx-background-color: #202026;
+}
+Label{
+    -fx-font-size: 20px;
+    -fx-text-fill: #fff;
+}
+
+
+.textSide{
+    -fx-font-size: 17px;
+}
+
+.parameters HBox Label{
+    -fx-text-fill: #79797d;
+    -fx-font-size: 17px;
+}
+.sideBar{
+    -fx-border-width: 0 1px 0 0;
+    -fx-border-color: white;
+    -fx-border-style: solid;
+}

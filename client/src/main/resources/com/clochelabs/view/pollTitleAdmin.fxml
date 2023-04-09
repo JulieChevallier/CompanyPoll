@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root alignment="CENTER_LEFT" stylesheets="@css/style.css" type="javafx.scene.layout.HBox" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <ImageView fx:id="image" styleClass="icon">
+        <HBox.margin>
+            <Insets right="10.0" />
+        </HBox.margin>
+    </ImageView>
+    <Label fx:id="text" styleClass="textSide" wrapText="true"  />
+    <ImageView fx:id="end" styleClass="icon">
+        <HBox.margin>
+            <Insets right="10.0" />
+        </HBox.margin>
+        <Image url="@close.png">
+
+        </Image>
+    </ImageView>
+</fx:root>

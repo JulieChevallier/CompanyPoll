@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root nodeOrientation="LEFT_TO_RIGHT" prefHeight="489.0" styleClass="sideBar" stylesheets="@css/style.css" type="javafx.scene.layout.VBox" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+    <HBox alignment="CENTER_LEFT">
+        <ImageView>
+            <Image url="@images/profile_picture.png" />
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+
+        </ImageView>
+        <Label fx:id="usernameContainer" text="username">
+         <effect>
+            <Glow level="1.0" />
+         </effect></Label>
+        <VBox.margin>
+            <Insets bottom="30.0" />
+        </VBox.margin>
+
+    </HBox>
+
+    <VBox fx:id="polls" prefWidth="142.0">
+        <HBox alignment="CENTER_LEFT">
+
+            <Label text="POLLS">
+                <padding>
+                    <Insets bottom="10.0" />
+                </padding>
+            <HBox.margin>
+               <Insets />
+            </HBox.margin></Label>
+        </HBox>
+      <VBox.margin>
+         <Insets bottom="20.0" />
+      </VBox.margin>
+
+    </VBox>
+   <VBox fx:id="polls1" layoutX="30.0" layoutY="85.0" styleClass="parameters" VBox.vgrow="ALWAYS">
+
+       <HBox fx:id="addPoll" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <ImageView fitHeight="17" fitWidth="17">
+                   <HBox.margin>
+                       <Insets right="10.0" />
+                   </HBox.margin>
+                   <image>
+                       <Image url="@images/add.png" />
+                   </image>
+               </ImageView>
+               <Label text="Ajouter un vote">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+           </children>
+       </HBox>
+       <HBox fx:id="addEmployee" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <ImageView fitHeight="17" fitWidth="17">
+                   <HBox.margin>
+                       <Insets right="10.0" />
+                   </HBox.margin>
+                   <image>
+                       <Image url="@images/add_employe.png" />
+                   </image>
+               </ImageView>
+               <Label text="Ajouter un employé">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+           </children>
+       </HBox>
+       <HBox fx:id="deleteEmployee" alignment="CENTER_LEFT" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+           <children>
+               <ImageView fitHeight="17" fitWidth="17">
+                   <HBox.margin>
+                       <Insets right="10.0" />
+                   </HBox.margin>
+                   <image>
+                       <Image url="@images/remove_employe.png" />
+                   </image>
+               </ImageView>
+               <Label text="Supprimer un employé">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Label>
+           </children>
+       </HBox>
+
+   </VBox>
+   <VBox layoutX="30.0" layoutY="421.0" styleClass="parameters">
+      <padding>
+         <Insets bottom="5.0" />
+      </padding>
+      <children>
+         <HBox fx:id="settings" alignment="CENTER_LEFT">
+            <children>
+               <ImageView fitHeight="17" fitWidth="17">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin>
+                  <image>
+                     <Image url="@images/parameter.png" />
+                  </image>
+               </ImageView>
+               <Label text="Settings">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></Label>
+            </children>
+         </HBox>
+
+         <HBox fx:id="signout" alignment="CENTER_LEFT">
+            <children>
+               <ImageView fitHeight="17" fitWidth="17">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin>
+                  <image>
+                     <Image url="@images/sign_out.png" />
+                  </image>
+               </ImageView>
+               <Label text="Sign out">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor></Label>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+
+    <padding>
+        <Insets left="20.0" top="15.0" />
+    </padding>
+
+</fx:root>

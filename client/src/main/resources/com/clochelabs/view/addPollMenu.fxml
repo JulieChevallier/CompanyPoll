@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@login.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" style="-fx-font-size: 30;" text="Ajouter un vote" />
+      <VBox layoutX="30.0" layoutY="164.0" prefHeight="73.0" prefWidth="228.0">
+         <children>
+            <Label text="Choix 1" />
+            <TextField fx:id="option1Field" promptText="option 1" styleClass="textFields" />
+         </children>
+      </VBox>
+      <VBox layoutX="24.0" layoutY="78.0" prefHeight="73.0" prefWidth="508.0">
+         <children>
+            <Label text="Titre" />
+            <TextField fx:id="titleField" prefHeight="34.0" prefWidth="513.0" promptText="Saisissez ici votre question" styleClass="textFields" />
+         </children>
+      </VBox>
+      <VBox layoutX="28.0" layoutY="247.0" prefHeight="73.0" prefWidth="508.0">
+         <children>
+            <Label text="Date de fin" />
+            <TextField fx:id="endField" prefHeight="34.0" prefWidth="509.0" promptText="dd/mm/yyyy" styleClass="textFields" />
+         </children>
+      </VBox>
+      <VBox layoutX="308.0" layoutY="164.0" prefHeight="73.0" prefWidth="228.0">
+         <children>
+            <Label text="Choix 2" />
+            <TextField fx:id="option2Field" promptText="option 2" styleClass="textFields" />
+         </children>
+      </VBox>
+      <Button fx:id="validateButton" layoutX="204.0" layoutY="330.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="168.0" style="-fx-background-color: #FFFF; -fx-background-insets: 0; -fx-background-radius: 15; -fx-font-size: 15;" text="Valider" />
+   </children>
+</fx:root>
