@@ -5,3 +5,6 @@ Company Poll is a voting application designed to facilitate decision-making for 
 ![](resources/cp2.png)
 ![](resources/cp1.png)
 ![](resources/cp3.png)
+![](resources/CompanyPoll1.png)
+![](resources/CompanyPoll.png)
+![](resources/CompanyPoll2.png)
