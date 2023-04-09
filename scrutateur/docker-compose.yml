@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+    app:
+        environment:
+          - PORT_KH1=5071
+          - PORT_KH2=5071
+          - PORT_KH3=5071
+          - IP_KH1=keyholder1
+          - IP_KH2=keyholder2
+          - IP_KH3=keyholder3
+          - PORT:5057
+          - KEY_SIZE=100
+        container_name : scrutateur
+        image: docker-scrutateur-image
+        networks:
+            - companypoll-network
+
+        build:
+          context: .
+        ports :
+          - 5057:5057
+
+networks:
+  companypoll-network:
+    external: true
